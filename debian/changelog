@@ -1,0 +1,29 @@
+xfce4-pulseaudio-plugin (0.2.2-1+trios2) mia; urgency=medium
+
+  * debian/rules:
+    - Exclude "panel/plugins" from dh_makeshlibs, fixes
+      "pkg-has-shlibs-control-file-but-no-actual-shared-libs" and 
+      "postrm/postinst-has-useless-call-to-ldconfig" lintian warnings.
+  * debian/control:
+    - Drop explicit dependency on xfce4-panel (>= 4.10). It's handled correctly
+      automatically. And it wouldn't run on 4.10 anyway, due to missing
+      gtk3 support.
+
+ -- Filip Danilovic <filip@openmailbox.org>  Sun, 19 Apr 2015 21:52:23 +0200
+
+xfce4-pulseaudio-plugin (0.2.2-1+trios1) mia; urgency=medium
+
+  * New upstream release.
+  * Bump standards to 3.9.6
+  * debian/rules:
+    - Remove .la files.
+
+ -- Filip Danilovic <filip@openmailbox.org>  Sun, 19 Apr 2015 21:16:25 +0200
+
+xfce4-pulseaudio-plugin (0.1.0-trios1) mia; urgency=medium
+
+  * First upstream release.
+  * Initial TRIOS release.
+
+ -- Filip Danilovic <filip@openmailbox.org>  Thu, 05 Mar 2015 01:55:56 +0100
+
